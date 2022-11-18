@@ -14,6 +14,6 @@ class AdminController extends Controller
     public function index()
     {
         $user = Auth::user();
-        return view('home');
+        return view('home', compact('user'));
     }
 }
