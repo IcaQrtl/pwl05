@@ -16,7 +16,7 @@
             <table id="table-data" class="table table-bordered">
                 <thead>
                     <tr class="text-center">
-                        <th>NO</th>
+                        <th>NO</th> 
                         <th>JUDUL</th>
                         <th>PENULIS</th>
                         <th>TAHUN</th>
@@ -71,7 +71,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{{ route('admin.book.submit')}}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('admin.book.submit') }}" method="post" enctype="multipart/form-data">
                     @csrf
                         <div class="form-group">
                             <label for="judul">Judul Buku</label>
