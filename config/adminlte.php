@@ -320,11 +320,11 @@ return [
         //     'label_color' => 'success',
         // ],
 
-        [
-            'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
-        ],
+        // [
+        //     'text' => 'blog',
+        //     'url'  => 'admin/blog',
+        //     'can'  => 'manage-blog',
+        // ],
 
         'MAIN NAVIGATION',
         [
