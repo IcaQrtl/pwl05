@@ -195,7 +195,7 @@
         function deleteConfirmation(id, judul) {
             swal.fire({
                 title: "Hapus?",
-                type: 'warning',
+                icon: "warning",
                 text: "Apakah anda yakin akan menghapus data buku dengan judul " + judul+"?!",
                 showCancelButton: !0,
                 confirmButtonText: "Ya, lakukan!",
@@ -204,7 +204,7 @@
             }).then(function (e) {
 
                 if (e.value === true) {
-                    var CSRF_TOKEN = $('meta[name="csrf-token"] ').attr('content');
+                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 
                     $.ajax({
                         type: 'POST',
@@ -223,7 +223,7 @@
                         }
                     });
                 } else {
-                    e.dismiss;
+                    e.dismiss
                 }
             }, function (dismiss) {
                  return false;

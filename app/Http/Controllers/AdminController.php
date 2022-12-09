@@ -104,7 +104,7 @@ class AdminController extends Controller
     public function delete_book($id)
     {
         $book =  Book::find($id);
-        $Storage::delete('public/cover_buku/' . $book->cover);
+        Storage::delete('public/cover_buku/' . $book->cover);
         $book->delete();
         $success = true;
         $message = "Data buku berhasil dihapus";
@@ -118,7 +118,7 @@ class AdminController extends Controller
     public function print_books()
     {
         $books = Book::all();
-        $pdf = PDF::loadview('print_book',['books'=> $books]);
+        $pdf = PDF::loadview('print_books',['books'=> $books]);
 
         return $pdf->download('data_buku.pdf');
     }

@@ -11,7 +11,7 @@
     <p class="text-center">Laporan Data Buku tahun 2022</p>
     <br/>
     <table id="table-data" class="table table-bordered">
-        <thread>
+        <thead>
             <tr>
                 <th>NO</th>
                 <th>JUDUL</th>
@@ -20,9 +20,9 @@
                 <th>PENERBIT</th>
                 <th>COVER</th>
             </tr>
-        </thread>
+        </thead>
         <tbody>
-            @php $no-1; @endphp
+            @php $no=1; @endphp
             @foreach($books as $book)
                 <tr>
                     <td>{{ $no++ }}</td>
