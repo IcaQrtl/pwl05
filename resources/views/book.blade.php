@@ -13,6 +13,11 @@
         <div class="card-body">
             <button class="btn btn-primary" data-toggle="modal" data-target="#tambahBukuModal"><i class="fa fa-plus"></i> Tambah Data</button>
             <a href ="{{ route('admin.print.books') }}" target="_blank" class="btn btn-secondary"><i class="fa fa-print"></i> Cetak PDF</a>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="{{route('admin.book.export') }}" class="btn btn-info" target="_blank">Export</a>
+                <button type=></button>
+
+            </div>
             <hr/>
             <table id="table-data" class="table table-bordered">
                 <thead>
@@ -159,6 +164,9 @@
         </div>
     </div>
 </div>
+
+<!-- MODAL IMPORT DATA FROM -->
+
 @stop
 
 @section('js')

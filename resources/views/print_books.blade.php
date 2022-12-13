@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <h1 class="text-center">Data Buku</h1>
-    <p class="text-center">Laporan Data Buku tahun 2022</p>
-    <br/>
+    <p class="text-center">Laporan Data Buku Tahun 2022</p>
+    <br />
     <table id="table-data" class="table table-bordered">
         <thead>
             <tr>
@@ -32,7 +30,7 @@
                     <td>{{ $book->penerbit }}</td>
                     <td>
                         @if($book->cover !== null)
-                            <img src="{{ public_path('storage/cover_buku/'.$book->cover) }}" width="80px"/>
+                            <img src="{{ public_path('storage/cover_buku/'.$book->cover) }}" width="80px" />
                         @else
                             [Gambar tidak tersedia]
                         @endif
