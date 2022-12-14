@@ -290,8 +290,6 @@ return [
     */
 
     'menu' => [
-        //Data menu
-
         // Navbar items:
         [
             'type'         => 'navbar-search',
@@ -321,12 +319,6 @@ return [
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],
-        [
-            'text' => 'Book',
-            'url'  => 'admin/books',
-            'icon' => 'fas fa-fw fa-book',
-            'can' => 'isAdmin',
-        ],
         [
             'text' => 'profile',
             'url'  => 'admin/settings',
