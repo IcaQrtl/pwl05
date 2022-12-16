@@ -136,7 +136,7 @@ class AdminController extends Controller
 
         $notification = array(
             'message' => 'Import data berhasil dilakukan',
-            'alaert-type' => 'success'
+            'alert-type' => 'success'
         );
 
         return redirect()->route('admin.books')->with($notification);
