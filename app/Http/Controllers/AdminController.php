@@ -9,7 +9,7 @@ use Illuminate\Validation\ValidationException;
 use PDF;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Exports\BookExport;
-use App\Imports\BookImports;
+use App\Imports\BooksImport;
 
 use App\Models\Book;
 
@@ -140,5 +140,5 @@ class AdminController extends Controller
         );
 
         return redirect()->route('admin.books')->with($notification);
-    } 
+    }
 }
